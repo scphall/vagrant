@@ -1,0 +1,25 @@
+# Colours
+txtrst='\033[0m'     # Text Reset
+txtblk='\033[0;30m'  # Black - Regular
+txtred='\033[0;31m'  # Red
+txtgrn='\033[0;32m'  # Green
+txtylw='\033[0;33m'  # Yellow
+txtblu='\033[0;34m'  # Blue
+txtpur='\033[0;35m'  # Purple
+txtcyn='\033[0;36m'  # Cyan
+txtwht='\033[0;37m'  # White
+
+PS1="\[$txtcyn\]\u\[$txtwht\]@\[$txtgrn\]\h\[$txtwht\]:\[$txtred\]\W\[$txtwht\]\$\[$txtrst\] "
+
+
+alias ls='ls --color=auto'
+alias rm="rm -i"
+alias mv="mv -i"
+alias cp="cp -i"
+alias grep="grep --color=auto"
+alias tmux="tmux -2"
+#export WORKON_HOME=$HOME/.virtualenv
+source /usr/local/bin/virtualenvwrapper.sh
+alias ipython="alias ipython --profile=default"
+alias ..="cd .."
+alias ...="cd ..."
